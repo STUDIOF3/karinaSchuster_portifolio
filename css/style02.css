@@ -31,6 +31,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 16px auto 0;
 }
 
 .logotipo img {
@@ -63,7 +64,7 @@ header h4 {
 }
 
 .navegacao ul li a:hover {
-    color: #ffbf00;
+    color: #73A2BF;
 }
 
 
@@ -82,7 +83,7 @@ header h4 {
     .one,
     .two,
     .three {
-        background: #ffbf00;
+        background: #73A2BF;
         height: 5px;
         width: 100%;
         margin: 6px auto;
@@ -105,7 +106,7 @@ header h4 {
         left: 0;
         width: 100vw;
         height: 100vh;
-        background-color: #394964;
+        background-color: #03588C;
         z-index: 10;
         display: flex;
         justify-content: center;
@@ -148,7 +149,7 @@ header h4 {
     }
 
     .menu-section.on nav ul a:hover {
-        color: #ffbf00;
+        color: #F2CAA7;
     }
 
 }
@@ -164,10 +165,6 @@ header h4 {
     }
 }
 
-
-
-
-
 /* HERO */
 
 .hero-container {
@@ -177,7 +174,6 @@ header h4 {
     align-items: center;
     margin: 0 auto;
 
-    background-color: aquamarine;
 }
 
 .hero-container img {
@@ -199,13 +195,13 @@ header h4 {
     font-size: 1.8rem;
     font-weight: bold;
     border-radius: 4px;
-    background: #ffbf00;
+    background: #73A2BF;
     border: none;
     cursor: pointer;
 }
 
 .contrate-arquiteto button:hover {
-    background: #394964;
+    background: #03588C;
     color: #fff;
 }
 
@@ -251,7 +247,6 @@ header h4 {
     margin: -100px auto 8px;
     border-radius: 50%;
 
-    background-color: aquamarine;
 }
 
 .sobre-container p {
@@ -265,13 +260,13 @@ header h4 {
     font-size: 1.8rem;
     font-weight: bold;
     border-radius: 4px;
-    background: #ffbf00;
+    background: #73A2BF;
     border: none;
     cursor: pointer;
 }
 
 .sobre-container button:hover {
-    background: #394964;
+    background: #03588C;
     color: #fff;
 }
 
@@ -282,7 +277,6 @@ header h4 {
         margin: -75px auto 8px;
         border-radius: 50%;
 
-        background-color: aquamarine;
     }
 
     @media(max-width: 755px) {
@@ -310,4 +304,188 @@ header h4 {
 
         }
     }
+}
+
+/* SERVIÇOS */
+
+.servicos-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+    flex-wrap: wrap;
+
+}
+
+.itemBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.itemBox figure img {
+    width: 150px;
+    height: 150px;
+    background-color: #dbdee421;
+    border-radius: 50%;
+    margin: 32px 60px;
+
+}
+
+.itemBox h5 {
+    width: 200px;
+    font-size: 2rem;
+    text-align: center;
+    margin: 8px 32px;
+}
+
+.itemBox p {
+    width: 200px;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 32px;
+}
+
+/* PROJETOS RECENTES */
+
+.recentes-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 46px auto 0px;
+    background: #73A2BF;
+}
+
+.recentes-container h3 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    margin: 8px auto;
+}
+
+.itens-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.itemRecents img {
+    width: 200px;
+    margin: 8px 32px 36px;
+    border-radius: 4px;
+}
+
+/* FORMULARIO */
+
+.form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 28px auto;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato label {
+    font-size: 2rem;
+}
+
+.contato label span {
+    color: red;
+}
+
+.contato input {
+    width: 450px;
+    height: 28px;
+    font-size: 1.6rem;
+    border: none;
+    background: #73a2bf18;
+}
+
+.contato input[type='submit'] {
+    height: 45px;
+    margin-top: 16px;
+    color: white;
+    font-size: 3rem;
+    background-color: #73A2BF;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.contato input[type='submit']:hover {
+    background-color: #03588C;
+}
+
+.contato input[name='nome'] {
+    text-transform: capitalize;
+}
+
+.contato textarea {
+    width: 450px;
+    height: 150px;
+    resize: none;
+    font-size: 1.6rem;
+    border: none;
+    background: #73a2bf18;
+}
+
+.form-container hr {
+    width: 2px;
+    height: 350px;
+    background: #03588C;
+    border: none;
+    margin-left: 60px;
+}
+
+.frase-fofa {
+    width: 350px;
+    height: 300px;
+    padding: 32px;
+
+}
+
+.frase-fofa p {
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+@media(max-width:880px) {
+    .form-container hr {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: 150px;
+    background: #24272b;
 }
