@@ -1,0 +1,170 @@
+/* HEADER */
+
+@media(max-width:768px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media(max-width: 560px) {
+    nav {
+        display: none;
+    }
+
+    .one,
+    .two,
+    .three {
+        background: #73A2BF;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: 0.3s;
+        cursor: pointer;
+    }
+
+    .menu-toggle {
+        position: absolute;
+        width: 40px;
+        height: 30px;
+        right: 0px;
+        top: 20px;
+        margin-right: 20px;
+    }
+
+    .menu-section.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #03588C;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-section.on nav {
+        display: block;
+    }
+
+    .menu-section.on .menu-toggle {
+        position: absolute;
+        right: 0px;
+        top: 20px;
+    }
+
+    .menu-section.on .menu-toggle .one {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu-section.on .menu-toggle .two {
+        opacity: 0;
+    }
+
+    .menu-section.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    .menu-section.on nav ul {
+        text-align: center;
+        display: block;
+    }
+
+    .menu-section.on nav ul a {
+        transition-duration: 0.5s;
+        font-size: 3.2rem;
+        line-height: 6rem;
+        display: block;
+        color: #fff;
+    }
+
+    .menu-section.on nav ul a:hover {
+        color: #F2CAA7;
+    }
+
+}
+
+@media(max-width: 220px) {
+    .menu-toggle {
+        position: absolute;
+        width: 20px;
+        height: 10px;
+        right: 0px;
+        top: 20px;
+        margin-right: 20px;
+    }
+}
+
+/* HERO */
+
+@media(max-width: 540px) {
+    .contrate-arquiteto h1 {
+        font-size: 3rem;
+    }
+
+    .contrate-arquiteto button {
+        width: 100px;
+        height: 20px;
+        font-size: 1.2rem;
+    }
+
+}
+
+@media(max-width: 260px) {
+    .contrate-arquiteto h1 {
+        font-size: 1.8rem;
+    }
+
+    .contrate-arquiteto button {
+        width: 100px;
+        height: 20px;
+        font-size: 1.2rem;
+    }
+}
+
+/* SOBRE */
+
+@media(max-width: 850px) {
+    .sobre-container img {
+        width: 150px;
+        height: 150px;
+        margin: -75px auto 8px;
+        border-radius: 50%;
+
+    }
+
+    @media(max-width: 755px) {
+        .sobre-container img {
+            width: 100px;
+            height: 100px;
+            margin: -50px auto 8px;
+            border-radius: 50%;
+        }
+    }
+
+    @media(max-width: 470px) {
+        .sobre-container img {
+            width: 80px;
+            height: 80px;
+            margin: -40px auto 8px;
+            border-radius: 50%;
+
+        }
+    }
+
+    @media(max-width: 320px) {
+        .sobre-container img {
+            display: none;
+
+        }
+    }
+}
+
+/* FORMULARIO */
+
+@media(max-width:880px) {
+    .form-container hr {
+        display: none;
+    }
+}

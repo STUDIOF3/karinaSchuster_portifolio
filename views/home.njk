@@ -1,0 +1,119 @@
+{% extends 'layout.njk' %}
+
+{% block head %}
+    <title>Fernando Silva</title>
+{% endblock %}
+
+{% block content %}
+    <section class="hero-container">
+        <img src="img/002 - FACHADA_FELIPE@2x.png" alt="">
+        <article class="contrate-arquiteto">
+            <h1>Contrate um Arquiteto</h1>
+            <button>Solicitar Orçamento</button>
+        </article>
+    </section>
+
+    <section class="sobre-container">
+        <img src="img/01.jpg" alt="Perfil Arquiteta">
+        <p>
+            A Arquitetura alia arte, design e estética à engenharia e construção. Além de conhecer sobre estruturas de um edifício, o arquiteto precisa levar em conta aspectos sociais, culturais e econômicos em seus projetos...
+        </p>
+        <button>Saiba-Mais</button>
+    </section>
+
+    <section class="servicos-container">
+        <article class="itemBox">
+            <figure>
+                <img src="img/monitor-cash-credit-card.png" alt="">
+            </figure>
+            <h5>Designer</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem numquam error reprehenderit debitis quas id, excepturi, cupiditate.</p>
+        </article>
+
+        <article class="itemBox">
+            <figure>
+                <img src="img/color-palette.png" alt="">
+            </figure>
+            <h5>Designer</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem numquam error reprehenderit debitis quas id, excepturi, cupiditate.</p>
+        </article>
+
+        <article class="itemBox">
+            <figure>
+                <img src="img/monitor-window.png" alt="">
+            </figure>
+            <h5>Designer</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem numquam error reprehenderit debitis quas id, excepturi, cupiditate.</p>
+        </article>
+
+        <article class="itemBox">
+            <figure>
+                <img src="img/radio-host.png" alt="">
+            </figure>
+            <h5>Designer</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem numquam error reprehenderit debitis quas id, excepturi, cupiditate.</p>
+        </article>
+    </section>
+
+    <section class="recentes-container">
+
+        <h3>Projetos Recentes</h3>
+
+        <section class="cards">
+            <article class='card' id="01">
+                <img src="img/01.jpg" alt="">
+            </article>
+
+            <article class='card'>
+                <img src="img/01.jpg" alt="">
+            </article>
+
+            <article class='card'>
+                <img src="img/03.jpg" alt="">
+            </article>
+
+            <article class='card'>
+                <img src="img/04.jpg" alt="">
+            </article>
+
+            <article class='card'>
+                <img src="img/04.jpg" alt="">
+            </article>
+
+        </section>
+
+    </section>
+
+    <section class="form-container">
+
+        <form class="contato">
+            <label>
+                Nome<span>*</span>:</label>
+            <input type="text" name="nome" required="required">
+
+            <label>
+                E-mail<span>*</span>:</label>
+            <input type="email" name="email" required="required">
+
+            <label>
+                Telefone:</label>
+            <input type="fone" name="telefone">
+
+            <label>
+                Menssagem<span>*</span>:</label>
+            <textarea name="menssagem" id="" cols="30" rows="10" required="required"></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+
+        <hr>
+
+        <article class="frase-fofa">
+            <p>O lápis e o computador são, se deixados por conta própria, tão burros e tão inteligentes quanto as pessoas que os guiam. Para ser arquiteto, é preciso ser duas coisas: otimista e curioso. Como arquiteto, se desenha para o presente, com certo conhecimento do passado, para um futuro que é essencialmente desconhecido.</p>
+        </article>
+
+    </section>
+    <footer></footer>
+
+    <script src="menu.js"></script>
+
+{% endblock %}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        {% block head %}
+            <title>Fernando Silva</title>
+        {% endblock %}
+
+        <link rel="stylesheet" href="/main.css">
+        <link rel="stylesheet" href="/resposive.css">
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <figure class="logotipo">
+                <img src="img/Logo@2x.png" alt="">
+            </figure>
+
+            <h2>Karina Schuster</h2>
+            <h4>Arquitetura & Urbanismo</h4>
+
+            <section class="menu-section">
+                <section class="menu-toggle">
+
+                    <article class="one"></article>
+                    <article class="two"></article>
+                    <article class="three"></article>
+
+                </section>
+
+                <nav class="navegacao">
+                    <ul>
+                        <li>
+                            <a href="/">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="/gallery">Galeria</a>
+                        </li>
+                        <li>
+                            <a href="#">Serviços</a>
+                        </li>
+                        <li>
+                            <a href="/blog">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+        </header>
+
+        {% block content %}{% endblock %}
+
+    </body>
+
+</html>

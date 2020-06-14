@@ -1,0 +1,22 @@
+.post-gallery {
+    max-width: 55%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 32px auto;
+    text-align: center;
+
+}
+
+.card-gallery img {
+    height: 350px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-gallery img:hover {
+    filter: grayscale(100%);
+}
